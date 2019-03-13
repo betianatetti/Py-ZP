@@ -10,6 +10,53 @@ body {font-family: Roboto; sans-serif;
   margin: auto;
 }
 
+.responsive {
+  min-width: 734px; 
+  max-width: 875px;
+  height: auto;
+}
+
+@media only screen and (max-width: 414px) {
+  /* For mobile phones: */
+ .slideshow-container {
+  min-width: 320px;
+  float: none;
+    width: 100%;
+    position: relative;
+    margin: auto;}
+
+    .menu {
+      float: none;
+    width: 75%;
+
+    }
+   
+   .main {
+    float: none;
+    width: 25%;
+   }
+}
+
+@media only screen and (min-width: 734px) {
+  /* For desktop: */
+ .slideshow-container {
+  max-width: 875px; 
+  float: none;
+    width: 100%;
+    position: relative;
+    margin: auto;}
+
+.menu {
+      float: none;
+    width: 75%;
+
+    }
+   
+   .main {
+    float: none;
+    width: 25%;
+   }
+
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -129,10 +176,23 @@ width: 120px;
 z-index:99;
 }
 
+.heart:hover {
+  color: red;
+}
+
 .badge-primary {
 position: relative;
 top: 50px;
 right: 20px;
 width: 120px;
 z-index:99;
+}
+
+button {
+  color: blue;
+  background-color: transparent;
+}
+
+h3 {
+  color: blue;
 }
