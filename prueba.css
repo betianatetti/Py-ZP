@@ -8,13 +8,9 @@ body {font-family: Roboto; sans-serif;
   max-width: 875px;
   position: relative;
   margin: auto;
+  resize: vertical;
 }
 
-.responsive {
-  min-width: 734px; 
-  max-width: 875px;
-  height: auto;
-}
 
 @media only screen and (max-width: 414px) {
   /* For mobile phones: */
@@ -23,7 +19,8 @@ body {font-family: Roboto; sans-serif;
   float: none;
     width: 100%;
     position: relative;
-    margin: auto;}
+    margin: auto;
+  resize: vertical;}
 
     .menu {
       float: none;
@@ -44,7 +41,8 @@ body {font-family: Roboto; sans-serif;
   float: none;
     width: 100%;
     position: relative;
-    margin: auto;}
+    margin: auto;
+  resize: vertical;}
 
 .menu {
       float: none;
@@ -76,6 +74,7 @@ body {font-family: Roboto; sans-serif;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  resize: vertical;
 }
 
 /* Position the "next button" to the right */
@@ -121,6 +120,7 @@ body {font-family: Roboto; sans-serif;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  resize: vertical;
 }
 
 .active, .dot:hover {
@@ -157,6 +157,7 @@ body {font-family: Roboto; sans-serif;
   float: left;
   padding: 15px;
   border: 2px black;
+  resize: vertical;
 }
 
 .main {
@@ -165,6 +166,7 @@ body {font-family: Roboto; sans-serif;
   padding: 15px;
   border: 2px black;
   font-family: Roboto, sans-serif;
+  resize: vertical;
 }
 
 .heart {
@@ -174,10 +176,12 @@ top: 50px;
 left: 820px;
 width: 120px;
 z-index:99;
+resize: vertical;
 }
 
 .heart:hover {
   color: red;
+  resize: vertical;
 }
 
 .badge-primary {
@@ -186,13 +190,48 @@ top: 50px;
 right: 20px;
 width: 120px;
 z-index:99;
+resize: vertical;
 }
 
 button {
   color: blue;
-  background-color: transparent;
+  background-color: white;
+  resize: vertical;
+  border: none;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor:pointer;
+  font-family: Roboto, sans-serif;
 }
+
+button:hover
+{ background-color: #6600cc;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); } 
 
 h3 {
   color: blue;
+  resize: vertical;
 }
+
+.label
+{position: relative;
+top: 80px;
+left: 20px;
+width: 130px;
+z-index:99;
+resize: vertical;
+color: white;
+padding: 8px;}
+
+.success {background-color: #6600cc;}
+
+.logo {align-content: left;
+  width: 50px;
+  height: 50px;
+}
+
